@@ -1,3 +1,2 @@
 # sarimkhan208.github.io
-<h2>Deployed Link</h2>
-< a href ="sarimkhan208.github.io">Sarim khan</a>
+ <h2>Deploy Link</h2> - https://wearex.vercel.app/  <br/>
