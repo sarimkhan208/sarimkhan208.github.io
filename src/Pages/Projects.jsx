@@ -1,26 +1,18 @@
 import { Button, Box,ButtonGroup, Icon, Card, CardBody,Center, CardFooter, Divider, Heading, Image, Stack, Text, SimpleGrid, HStack, Link, useColorModeValue, useColorMode, border } from "@chakra-ui/react";
 
-import {FcAbout} from 'react-icons/fc'
-import { AiFillHome , AiTwotoneSliders } from 'react-icons/ai'
 import {GoProject} from 'react-icons/go'
-import {RiContactsBookLine} from 'react-icons/ri'
 
-import {SiGithub} from 'react-icons/si'
-import {SiNetlify} from 'react-icons/si'
-// start icons
+
 import {GrReactjs} from 'react-icons/gr'
-import {IoLogoHtml5} from 'react-icons/io'
-import {IoLogoCss3} from 'react-icons/io'
-import {SiJavascript} from 'react-icons/si'
-import {SiChakraui} from 'react-icons/si'
-import{SiJson} from 'react-icons/si'
+import {IoLogoCss3,IoLogoNodejs,IoLogoHtml5} from 'react-icons/io'
+import{SiMongodb,SiExpress,SiChakraui,SiGithub,SiNetlify,SiJavascript,SiFirebase} from 'react-icons/si'
 
 
 const ProjectsDetail = [
   {
-    id:1,
+    id:7,
     title : "Wearex (Ajio.com Clone)",
-    desc : 'Wearex is an e-commerce website were you can buy your fashionable clothes',
+    desc : 'Wearex: Fashion Forward - Unveiling a Stylish Shopping Experience Inspired by Ajio.com. Discover the Latest Trends, Exclusive Collections, and Irresistible Deals at Wearex. Embrace Your Unique Style with Confidence and Explore a World of Fashion Possibilities. Elevate Your Wardrobe with Premium Clothing',
     imageDay : 'https://i.postimg.cc/JhtzdL9t/wearexday.png',
     imageNight : 'https://i.postimg.cc/fRpGDQVV/wearexnight.png',
     github : 'https://github.com/sarimkhan208/kindhearted-afternoon-7542',
@@ -35,9 +27,78 @@ const ProjectsDetail = [
 
   },
   {
+    id:6,
+    title : "Diamond Lane (Caratlane clone)",
+    desc : 'Diamond Lane: Unleashing the Brilliance of Fine Diamond Jewellery - Inspired by CaratLane. Discover a World of Exquisite Designs and Timeless Elegance at Diamond Lane. Indulge in the Beauty and Sparkle of Diamonds, Crafted to Perfection',
+    imageDay : 'https://i.postimg.cc/7ZD3rcrH/mobile.png',
+    imageNight : 'https://i.postimg.cc/7ZD3rcrH/mobile.png',
+    github : 'https://github.com/tambeaditya101/abounding-kittens-4324',
+    liveDemo:'https://caratlane.vercel.app/',
+    icons : [
+              {icon:GrReactjs , iconName:'ReactJS' , iconColor:'#80DEEA' },
+              {icon:SiChakraui , iconName:'Chakra UI' , iconColor:'#4DB6AC' },
+              {icon: SiMongodb, iconName:'MongoDB' , iconColor:'#589636' },
+              {icon:SiExpress , iconName:'Express' , iconColor:'#00153E' },
+              {icon: IoLogoNodejs, iconName:'NodeJS' , iconColor:'#388E3C' },
+            ]
+
+  },
+  {
+    id:5,
+    title : "Online Voting System",
+    desc : 'eVote: Empowering Democracy with Secure Online Voting - Revolutionizing the Voting Experience for a Digital Era. Engage in Transparent and Convenient Voting with our Cutting-edge Online Voting System.',
+    imageDay : 'https://i.postimg.cc/YC7nhpvC/mobile.png',
+    imageNight : 'https://i.postimg.cc/YC7nhpvC/mobile.png',
+    github : 'https://github.com/sarimkhan208/online-voting-system',
+    liveDemo:'https://online-voting-system-1bvlv6qtg-sarimkhan208.vercel.app/',
+    icons : [
+              {icon:GrReactjs , iconName:'ReactJS' , iconColor:'#80DEEA' },
+              {icon:SiChakraui , iconName:'Chakra UI' , iconColor:'#4DB6AC' },
+              {icon: SiMongodb, iconName:'MongoDB' , iconColor:'#589636' },
+              {icon:SiExpress , iconName:'Express' , iconColor:'#00153E' },
+              {icon: IoLogoNodejs, iconName:'NodeJS' , iconColor:'#388E3C' },
+            ]
+
+  },
+  {
+    id:4,
+    title : "Chalo Ghume (Expedia.com clone)",
+    desc : 'Chalo Ghume: Your Ultimate Travel Companion - Unveiling a World of Travel Possibilities with Expedia Group Cloned Platform',
+    imageDay : 'https://i.postimg.cc/ZqDGB6JQ/mobile-1.png',
+    imageNight : 'https://i.postimg.cc/X70TCj0n/mobile-2.png',
+    github : 'https://github.com/kumkumdutta/interesting-stretch-8935',
+    liveDemo:'https://interesting-stretch-8935.vercel.app/',
+    icons : [
+          {icon:IoLogoHtml5 , iconName:'HTML' , iconColor:'#E65100' },
+          {icon:SiJavascript , iconName:'JavaScript' , iconColor:'#FFD600' },
+          {icon:SiChakraui , iconName:'JSON Server' , iconColor:'#673AB7' },
+          {icon:GrReactjs , iconName:'ReactJS' , iconColor:'#80DEEA' },
+          {icon:SiFirebase , iconName:'Firebase' , iconColor:'#FFCA28' },
+          
+        ]
+
+  },
+  {
+    id:3,
+    title : "Marvel Studios",
+    desc : 'Marvel Studios: Assemble Your Superhero Universe - Embrace the Power of Creation and Explore a Multiverse of Superheroes. Join the Epic Journey of Building Your Own Hero and Discover the Marvelous Creations of Others.',
+    imageDay : 'https://i.postimg.cc/yYtM7PBB/index.png',
+    imageNight : 'https://i.postimg.cc/yYtM7PBB/index.png',
+    github : 'https://github.com/sarimkhan208/Full-Stack-Marvel_project',
+    liveDemo:'https://marvel-sable.vercel.app/',
+    icons : [
+          {icon:GrReactjs , iconName:'ReactJS' , iconColor:'#80DEEA' },
+          {icon:SiChakraui , iconName:'Chakra UI' , iconColor:'#4DB6AC' },
+          {icon: SiMongodb, iconName:'MongoDB' , iconColor:'#589636' },
+          {icon:SiExpress , iconName:'Express' , iconColor:'#00153E' },
+          {icon: IoLogoNodejs, iconName:'NodeJS' , iconColor:'#388E3C' },
+        ]
+
+  },
+  {
     id:2,
     title : "Crafts Bazaar (Craftsvilla.com Clone)",
-    desc : 'Craft Bazaar is an e commerce website were you can buy fashionable clothes & kitchen utilities',
+    desc : 'CraftBazaar: Unleashing Artistry and Creativity - Inspired by Craftsvilla. Explore a World of Handcrafted Treasures and Unique Artisanal Creations at CraftBazaar. Immerse Yourself in the Richness of Craftsmanship and Discover Extraordinary Pieces of Art.',
     imageDay : 'https://i.postimg.cc/Jh7PfTqs/crafvilladay.png',
     imageNight : 'https://i.postimg.cc/Jh7PfTqs/crafvilladay.png',
     github : 'https://github.com/Kirti180/crabby-whistle-3208',
@@ -51,9 +112,9 @@ const ProjectsDetail = [
 
   },
   {
-    id:3,
+    id:1,
     title : "Eify Beauty (Nykaa.com Clone)",
-    desc : 'Eify Beauty is a cosmetic website we you buy your cosmetic products',
+    desc : '"Eify Beauty: Unveiling the Essence of Glamour - Inspired by Nykaa.com. Discover a World of Beauty and Skincare at Eify Beauty. Embrace Your Inner Glow with a Range of Premium Cosmetics, Skincare Essentials, and Beauty Accessories. Enhance Your Style with Confidence and Unleash the Power of Eify Beauty.',
     imageDay : 'https://i.postimg.cc/xdqLGB53/eifyday.png',
     imageNight : 'https://i.postimg.cc/7hq692Dr/eifynight.png',
     github : 'https://github.com/sarimkhan208/obtainable-tongue-3381',
@@ -64,21 +125,7 @@ const ProjectsDetail = [
               {icon:SiJavascript , iconName:'JavaScript' , iconColor:'#FFD600' }
             ]
 
-  },
-  {
-    id:4,
-    title : "Tindog (Tinder.com Clone)",
-    desc : 'Tindog is a clone on tinder.com where you can find mate dogs and it is single page static website',
-    imageDay : 'https://i.postimg.cc/rw8WCTr7/tindognight.png',
-    imageNight : 'https://i.postimg.cc/mkf1cW4X/Tindoggg-Day.png',
-    github : 'https://github.com/sarimkhan208/tindog',
-    liveDemo:'https://jade-lebkuchen-87c4bf.netlify.app/',
-    icons : [
-              {icon:IoLogoHtml5 , iconName:'HTML' , iconColor:'#E65100' },
-              {icon:IoLogoCss3 , iconName:'CSS' , iconColor:'#0277BD' }
-            ]
-
-  },
+  }
 ]
 
 
