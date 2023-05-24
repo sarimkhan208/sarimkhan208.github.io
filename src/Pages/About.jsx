@@ -90,7 +90,7 @@ import {
         
         onClick={() => {
           window.open(
-            "https://drive.google.com/file/d/1gN9UPDmCgVRsJSttOCI56jzYLNhEjY7c/view"
+            "https://drive.google.com/file/d/1j0YQaNI8UdgvEcJKiHyv0C59Mx2stS3t/view?usp=sharing"
           );
           downloadFile();
         }}

@@ -32,7 +32,7 @@ const ProjectsDetail = [
     desc : 'Diamond Lane: Unleashing the Brilliance of Fine Diamond Jewellery - Inspired by CaratLane. Discover a World of Exquisite Designs and Timeless Elegance at Diamond Lane. Indulge in the Beauty and Sparkle of Diamonds, Crafted to Perfection',
     imageDay : 'https://i.postimg.cc/7ZD3rcrH/mobile.png',
     imageNight : 'https://i.postimg.cc/7ZD3rcrH/mobile.png',
-    github : 'https://github.com/tambeaditya101/abounding-kittens-4324',
+    github : 'https://github.com/sarimkhan208/Carat-lane',
     liveDemo:'https://caratlane.vercel.app/',
     icons : [
               {icon:GrReactjs , iconName:'ReactJS' , iconColor:'#80DEEA' },
@@ -66,7 +66,7 @@ const ProjectsDetail = [
     desc : 'Chalo Ghume: Your Ultimate Travel Companion - Unveiling a World of Travel Possibilities with Expedia Group Cloned Platform',
     imageDay : 'https://i.postimg.cc/ZqDGB6JQ/mobile-1.png',
     imageNight : 'https://i.postimg.cc/X70TCj0n/mobile-2.png',
-    github : 'https://github.com/kumkumdutta/interesting-stretch-8935',
+    github : 'https://github.com/sarimkhan208/Chalo-ghume',
     liveDemo:'https://interesting-stretch-8935.vercel.app/',
     icons : [
           {icon:IoLogoHtml5 , iconName:'HTML' , iconColor:'#E65100' },
@@ -85,7 +85,7 @@ const ProjectsDetail = [
     imageDay : 'https://i.postimg.cc/yYtM7PBB/index.png',
     imageNight : 'https://i.postimg.cc/yYtM7PBB/index.png',
     github : 'https://github.com/sarimkhan208/Full-Stack-Marvel_project',
-    liveDemo:'https://marvel-sable.vercel.app/',
+    liveDemo:'https://frontend-beige-mu.vercel.app/',
     icons : [
           {icon:GrReactjs , iconName:'ReactJS' , iconColor:'#80DEEA' },
           {icon:SiChakraui , iconName:'Chakra UI' , iconColor:'#4DB6AC' },
@@ -101,7 +101,7 @@ const ProjectsDetail = [
     desc : 'CraftBazaar: Unleashing Artistry and Creativity - Inspired by Craftsvilla. Explore a World of Handcrafted Treasures and Unique Artisanal Creations at CraftBazaar. Immerse Yourself in the Richness of Craftsmanship and Discover Extraordinary Pieces of Art.',
     imageDay : 'https://i.postimg.cc/Jh7PfTqs/crafvilladay.png',
     imageNight : 'https://i.postimg.cc/Jh7PfTqs/crafvilladay.png',
-    github : 'https://github.com/Kirti180/crabby-whistle-3208',
+    github : 'https://github.com/sarimkhan208/Craft-bazaar',
     liveDemo:'https://genuine-bavarois-d93c8f.netlify.app/',
     icons : [
               {icon:IoLogoHtml5 , iconName:'HTML' , iconColor:'#E65100' },
