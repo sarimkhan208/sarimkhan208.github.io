@@ -27,10 +27,28 @@ import {
   } from 'react-icons/md';
   import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
   import {GrTwitter,GrLinkedinOption} from 'react-icons/gr'
+  import React, { useRef, useState } from 'react';
+  import emailjs from '@emailjs/browser';
+  import './contact.css'
   
   export default function Contact({contact}) {
+    const form = useRef();
+
+    const sendEmail = (e)=>{
+      e.preventDefault()
+
+      emailjs.sendForm('service_15wdkoz', 'template_qdjbq8f', form.current, '-NTpPszCYuLXxg974')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      
+
+    }
+
     return (
-      <Container ref={contact} id="contact" bg={useColorModeValue("white","gray.800")} maxW="full" mt={0} centerContent overflow="hidden">
+      <Container ref={contact}  id="contact" bg={useColorModeValue("white","gray.800")} maxW="full" mt={0} centerContent overflow="hidden">
         <Flex>
           <Box
             border={'3px solid #4FC3F7'}
@@ -122,52 +140,27 @@ import {
                     </HStack>
                   </Box>
                 </WrapItem>
+                <div class="form-container">
+                  <form ref={form} onSubmit={sendEmail} id="contact-form">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="user_name" required/>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="user_email" required/>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" value="Send" id="button" />
+                    </div>
+                  </form>
+                </div>
                 <WrapItem>
-                  <Box bg="white" borderRadius="lg">
-                    <Box m={8} color="#0B0E3F">
-                      <VStack spacing={5}>
-                        <FormControl id="name">
-                          <FormLabel>Your Name</FormLabel>
-                          <InputGroup borderColor="#E0E1E7">
-                            <InputLeftElement
-                              pointerEvents="none"
-                              children={<BsPerson color="gray.800" />}
-                            />
-                            <Input type="text" size="md" />
-                          </InputGroup>
-                        </FormControl>
-                        <FormControl id="name">
-                          <FormLabel>Mail</FormLabel>
-                          <InputGroup borderColor="#E0E1E7">
-                            <InputLeftElement
-                              pointerEvents="none"
-                              children={<MdOutlineEmail color="gray.800" />}
-                            />
-                            <Input type="text" size="md" />
-                          </InputGroup>
-                        </FormControl>
-                        <FormControl id="name">
-                          <FormLabel>Message</FormLabel>
-                          <Textarea
-                            borderColor="gray.300"
-                            _hover={{
-                              borderRadius: 'gray.300',
-                            }}
-                            placeholder="message"
-                          />
-                        </FormControl>
-                        <FormControl id="name" float="right">
-                          <Button
-                            variant="solid"
-                            bg="#0D74FF"
-                            color="white"
-                            _hover={{}}>
-                            Send Message
-                          </Button>
-                        </FormControl>
-                      </VStack>
-                    </Box>
-                  </Box>
+                  
                 </WrapItem>
               </Wrap>
             </Box>
@@ -176,3 +169,4 @@ import {
       </Container>
     );
   }
+

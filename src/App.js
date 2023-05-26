@@ -13,6 +13,7 @@ import GithubCal from './Pages/GithubCalender';
 import { useContext, useEffect, useRef } from 'react';
 import { ScrollContext } from './Context/ScrollContext';
 import Contact from './Pages/Contacts';
+import { ContactUs } from './Pages/TempContact';
 
 function App() {
   const {scrollRef} = useContext(ScrollContext)
@@ -42,6 +43,7 @@ function App() {
       <GithubCal/>
       <Contact contact={contact} />
       <Footer/>
+      {/* <ContactUs/> */}
       
     </div>
   );
