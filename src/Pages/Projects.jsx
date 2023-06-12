@@ -50,7 +50,7 @@ const ProjectsDetail = [
     imageDay : 'https://i.postimg.cc/YC7nhpvC/mobile.png',
     imageNight : 'https://i.postimg.cc/YC7nhpvC/mobile.png',
     github : 'https://github.com/sarimkhan208/online-voting-system',
-    liveDemo:'https://online-voting-system-1bvlv6qtg-sarimkhan208.vercel.app/',
+    liveDemo:'https://online-voting-system-ruddy.vercel.app/',
     icons : [
               {icon:GrReactjs , iconName:'ReactJS' , iconColor:'#80DEEA' },
               {icon:SiChakraui , iconName:'Chakra UI' , iconColor:'#4DB6AC' },
